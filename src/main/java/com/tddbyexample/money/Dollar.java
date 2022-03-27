@@ -1,7 +1,7 @@
 package com.tddbyexample.money;
 
 public class Dollar {
-  public Integer amount;
+  public Integer amount = 10;
 
   public Dollar(int amount){}
 
