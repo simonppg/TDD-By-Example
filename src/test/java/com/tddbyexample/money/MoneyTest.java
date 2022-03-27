@@ -1,13 +1,17 @@
 package com.tddbyexample.money;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
+
+import com.tddbyexample.money.Dollar;
 
 public class MoneyTest {
 
   @Test
-  public void firstTest() {
-    fail("bad test");
+  public void testMultiplication() {
+    Dollar five = new Dollar(5);
+    five.times(2);
+    assertEquals(10, five.amount);
     
   }
   
